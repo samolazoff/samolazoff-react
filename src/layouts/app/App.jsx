@@ -1,10 +1,11 @@
+import AppRoutes from '../../routes/Routes';
+
 import './App.scss';
-const App = () => {
+
+function App() {
     return (
-        <div>
-            <a href="">asdasdasd</a>
-        </div>
-    );
+        <AppRoutes/>
+    )
 };
 
 export default App;
