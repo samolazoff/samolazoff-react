@@ -1,1 +1,36 @@
 @use "../../styles/reset";
+
+.d-none{
+    display: none !important;
+}
+
+.app{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: lightcoral;
+}
+
+@media screen and (max-width: 1200px) {
+    .app{
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .app{
+        max-width: 992px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .app{
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .app{
+        max-width: 576px;
+    }
+}

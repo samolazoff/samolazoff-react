@@ -1,0 +1,67 @@
+.main-slide{
+    position: relative;
+    width: 100%;
+    height: 97vh;
+    background-color:azure;
+    &-content{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        @include flex($dir: rows);
+        &-txt{
+            width: 40%;
+            height: 100%;
+            background-color:greenyellow;
+        }
+        &-img{
+            width: 60%;
+            height: 100%;
+            background-color:yellow;
+        }
+    }
+    
+}
+.app-header{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: bisque;
+    @include flex($dir: rows, $jc: flex-start);
+    gap: 150px;
+    z-index: 10;
+}
+.logo{
+    padding: 10px 20px;
+}
+.social-list{
+    width: 300px;
+    height: 40px;
+    background-color:blueviolet;
+}
+.lang-panel{
+    width: 80px;
+    height: 40px;
+    background-color:blueviolet;
+}
+.burger{
+    position: absolute;
+    top: 35px;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    z-index: 20;
+}
+.burger:hover{
+    background-color: silver;
+}
+.app-nav{
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 80%;
+    height: 98vh;
+    @include flex($jc: flex-end);
+    background-color: white;
+    z-index: 15;
+}
