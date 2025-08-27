@@ -1,8 +1,8 @@
-
+import './App.scss';
 const App = () => {
     return (
         <div>
-            
+            <a href="">asdasdasd</a>
         </div>
     );
 };
