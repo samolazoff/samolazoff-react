@@ -1,14 +1,23 @@
 import './MainSlide.scss';
 
+import { useState } from 'react';
+
 const MainSlide = () => {
+
+    const [openMenu, setOpenMenu] = useState(true);
+
+    const changeOpenMenu = () => {
+        setOpenMenu(!openMenu);
+    }
+
     return (
         <section className='main-slide'>
             <header className='app-header'>
                 <h1 className="logo">SAMOLAZOFF</h1>
-                <div className="social-list"></div>
+                <div className={openMenu?"social-list":"social-listd-none"}></div>
                 <div className="lang-panel"></div>
-                <div className="burger"></div>
-                <nav className="app-nav d-none">
+                <div className={openMenu?"burger":"X"} onClick={changeOpenMenu}></div>
+                <nav className={openMenu?"app-nav d-none":"app-nav"}>
                     <div className="social-list"></div>
                 </nav>
             </header>
