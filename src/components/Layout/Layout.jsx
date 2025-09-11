@@ -1,6 +1,9 @@
 import { Outlet } from 'react-router';
 import { useState } from 'react';
 
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+
 const Layout = () => {
     const [openMenu, setOpenMenu] = useState(true);
         
@@ -10,20 +13,14 @@ const Layout = () => {
     
     return (
         <>
-            
-            <main className='app'>
-                    <header className='app-header'>
-                    <h1 className="logo">SAMOLAZOFF</h1>
-                    <div className={openMenu?"social-list":"social-listd-none"}></div>
-                    <div className="lang-panel"></div>
-                    <div className={openMenu?"burger":"X"} onClick={changeOpenMenu}></div>
-                    <nav className={openMenu?"app-nav d-none":"app-nav app-nav-animation"}>
-                        <div className="social-list"></div>
-                    </nav>
-                </header>
+            <Header/>
+            <main className='app container'>
+                {/* <Header/> */}
                 <Outlet />
             </main>
+            <Footer/>
         </>
+        
     );
 };
 

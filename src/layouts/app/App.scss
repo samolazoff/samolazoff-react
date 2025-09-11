@@ -1,36 +1,46 @@
 @use "../../styles/reset";
 
+#root{
+    @include flex($dir: column, $jc: space-between, $ai: center);
+    height: 100vh;
+}
+
+.app{
+    width: 100%;
+    height: 300px;
+    background-color: lightcoral;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
 .d-none{
     display: none !important;
 }
 
-.app{
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 10px 20px;
-    background-color: lightcoral;
-}
-
 @media screen and (max-width: 1200px) {
-    .app{
+    .container{
         max-width: 1200px;
     }
 }
 
 @media screen and (max-width: 992px) {
-    .app{
+    .container{
         max-width: 992px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .app{
+    .container{
         max-width: 768px;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .app{
+    .container{
         max-width: 576px;
     }
 }
