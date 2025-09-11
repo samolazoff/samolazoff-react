@@ -1,5 +1,5 @@
 .app-header{
+    @include  flex($dir: row, $jc: space-between, $ai: center);
     height: 100px;
     width: 100%;
-    background-color: black;
 }
