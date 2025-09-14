@@ -1,5 +1,9 @@
 .app-header{
-    @include  flex($dir: row, $jc: space-between, $ai: center);
+    @include  flex($dir: row, $jc: space-between);
     height: 100px;
     width: 100%;
+    .use-box{
+        @include  flex($dir: row);
+        gap: 250px;
+    }
 }
