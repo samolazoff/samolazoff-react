@@ -1,6 +1,7 @@
 import './Header.scss';
 
 import Logo from '../Logo/Logo';
+import Nav from '../Nav/Nav';
 
 const Header = () => {
     return (
@@ -8,7 +9,7 @@ const Header = () => {
             <div className="use-box">
                 <Logo/>
             </div>
-            
+            <Nav/>
         </header>
     );
 };
