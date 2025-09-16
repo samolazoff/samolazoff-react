@@ -24,3 +24,26 @@
 .hamburger-react{
     z-index: 999999;
 }
+@media screen and (max-width: 1200px) {
+   
+}
+
+@media screen and (max-width: 992px) {
+    .app-nav{
+        &-box{
+            width: 100vw;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .app-nav{
+        .contacts-mini{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+   
+}

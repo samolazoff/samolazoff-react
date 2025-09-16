@@ -3,3 +3,22 @@
     font-size: 48px;
     z-index: 99999;
 }
+@media screen and (max-width: 1200px) {
+   
+}
+
+@media screen and (max-width: 992px) {
+    .logo{
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+   
+}
+
+@media screen and (max-width: 576px) {
+    .logo{
+        font-size: 28px;
+    }
+}

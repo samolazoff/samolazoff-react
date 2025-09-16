@@ -7,3 +7,28 @@
         gap: 250px;
     }
 }
+@media screen and (max-width: 1200px) {
+   
+}
+
+@media screen and (max-width: 992px) {
+   .app-header{
+        .use-box{
+            gap: 150px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .app-header{
+        .use-box{
+            .social-panel-mini{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+   
+}
