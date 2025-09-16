@@ -4,7 +4,6 @@ import { useState } from 'react';
 
 import Hamburger from 'hamburger-react';
 import NavItem from './NavItem';
-import SocialPanelMini from '../SocialPanelMini/SocialPanelMini';
 import ContactsMini from '../ContactsMini/ContactsMini';
 
 const Nav = () => {

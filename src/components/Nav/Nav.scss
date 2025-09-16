@@ -24,10 +24,6 @@
 .hamburger-react{
     z-index: 999999;
 }
-@media screen and (max-width: 1200px) {
-   
-}
-
 @media screen and (max-width: 992px) {
     .app-nav{
         &-box{
@@ -42,8 +38,4 @@
             display: none;
         }
     }
-}
-
-@media screen and (max-width: 576px) {
-   
 }
