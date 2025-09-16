@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 import Hamburger from 'hamburger-react';
 import NavItem from './NavItem';
+import SocialPanelMini from '../SocialPanelMini/SocialPanelMini';
 
 const Nav = () => {
 
@@ -15,19 +16,21 @@ const Nav = () => {
         'services',
         'contact',
         'blog'
-    ]
-        console.log(isOpen);
-        
+    ];
+   
     return (
         <nav className='app-nav'>
-            <Hamburger toggled={isOpen} toggle={setOpen} />
-            <ul className={(!isOpen)?'app-nav-items  d-none':'app-nav-items'}>
-                {                    
-                    dataNav.map((itm, idx) => {
-                       return <NavItem name = {itm} key = {idx}/>
-                    })
-                }
-            </ul>
+            <Hamburger toggled={isOpen} toggle={setOpen}/>
+            <div className={(!isOpen)?'app-nav-box  d-none':'app-nav-box'}>
+                <SocialPanelMini/>
+                <ul className='app-nav-items'>
+                    {                    
+                        dataNav.map((itm, idx) => {
+                        return <NavItem name = {itm} key = {idx}/>
+                        })
+                    }
+                </ul>
+            </div>
         </nav>
     );
 };

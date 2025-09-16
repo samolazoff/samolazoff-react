@@ -5,13 +5,14 @@ import SocialPanelMini from '../SocialPanelMini/SocialPanelMini';
 import Nav from '../Nav/Nav';
 
 const Header = () => {
+
     return (
         <header className='app-header container'>
             <div className="use-box">
                 <Logo/>
                 <SocialPanelMini/>
             </div>
-            <Nav/>
+            <Nav />
         </header>
     );
 };

@@ -1,0 +1,26 @@
+.app-nav{
+    position: relative;
+    &-box{
+        position: absolute;
+        top: -30px;
+        right: -20px;
+        @include flex($dir: row, $jc: space-around);
+        height: 100vh;
+        width: 80vw;
+        background-color: #ffffff;
+    }
+    &-items{
+        @include flex();
+        gap: 20px;
+    }
+    &-item{
+        font-size: 2rem;
+        text-transform: capitalize;
+        &:hover{
+            color: #4C40F7;
+        }
+    }
+}
+.hamburger-react{
+    z-index: 999999;
+}
