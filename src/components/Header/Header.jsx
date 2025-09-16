@@ -10,7 +10,7 @@ const Header = () => {
         <header className='app-header container'>
             <div className="use-box">
                 <Logo/>
-                <SocialPanelMini/>
+                <SocialPanelMini flexDirection='row'/>
             </div>
             <Nav />
         </header>

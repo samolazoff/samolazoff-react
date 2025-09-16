@@ -1,0 +1,11 @@
+.contacts-mini{
+    @include flex($ai: flex-start);
+        gap: 10px;
+    &-item{
+        @include flex($dir: row);
+        gap: 10px;
+    }
+    &__svg{
+        width: 24px;
+    }
+}

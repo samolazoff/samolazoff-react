@@ -1,9 +1,8 @@
 .social-panel-mini{
-    @include flex($dir: row);
-    gap: 25px;
+    gap: 10px;
     &-item{
-        @include flex($dir: row);
-         gap: 10px;
+        @include flex($dir: row, $jc: flex-start);
+        gap: 20px;
         &__img{
             width: 24px;
         }
@@ -11,4 +10,10 @@
             text-transform: capitalize;
         }
     }
+}
+.social-panel-mini_row{
+    @include flex($dir: row, $jc: flex-start);
+}
+.social-panel-mini_column{
+    @include flex();
 }

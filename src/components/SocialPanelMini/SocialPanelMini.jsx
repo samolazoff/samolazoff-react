@@ -5,8 +5,7 @@ import svgGitHub  from '../../static/svg/social/github-142-svgrepo-com.svg';
 
 import SocialpanelMiniItem from './SocialpanelMiniItem';
 
-
-const SocialPanelMini = () => {
+const SocialPanelMini = ({flexDirection}) => {
 
     const dataSocialMini = [
         {
@@ -23,7 +22,8 @@ const SocialPanelMini = () => {
     ];
 
     return (
-        <div className='social-panel-mini'>
+        
+        <div className={'social-panel-mini social-panel-mini_'+flexDirection}>
             {
                 dataSocialMini.map(
                     (item, idx) => {
