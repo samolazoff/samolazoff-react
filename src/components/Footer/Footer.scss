@@ -1,8 +1,56 @@
 .app-footer{
     width: 100%;
     background-color: #00113B;
+    &-content{
+        margin: 50px 50px 0 50px;
+        padding: 50px 0;
+        @include flex($dir: row, $jc: space-around);
+        gap: 20px;
+        border-bottom:1px solid #ffffff;
+    }
     &-nav{
         @include flex();
         gap: 20px;
     }
+    &-box-bottom{
+        @include flex($dir: row, $jc: space-between);
+        width: 100%;
+        padding: 25px 50px;
+        color: #ffffff;
+        &__link{
+            &:hover{
+                color: #FFBDBD;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .app-footer{
+        &-content{
+            margin: 40px 25px 0 25px;
+        }
+        &-nav{
+            gap: 20px;
+        }
+        &-box-bottom{
+            @include flex($dir: row, $jc: space-between);
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+   .app-footer{
+        &-content{
+            margin: 20px 20px 0 20px;
+            @include flex();
+        }
+        &-nav{
+            display: none;
+        }
+    } 
+}
+
+@media screen and (max-width: 576px) {
+  
 }

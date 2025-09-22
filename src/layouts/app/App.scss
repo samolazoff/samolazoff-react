@@ -2,7 +2,7 @@
 
 #root{
     @include flex($dir: column, $jc: space-between, $ai: center);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .app{

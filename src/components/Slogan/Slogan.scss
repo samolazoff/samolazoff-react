@@ -13,5 +13,34 @@
             color: #ffffff;
         }
     }
-    
+}
+@media screen and (max-width: 992px) {
+    .slogan{
+        &__main{
+            max-width: 450px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slogan{
+        &__main{
+            max-width: 300px;
+            font-size: 2rem;
+        }
+        &__link{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+  .slogan{
+        &__main{
+            font-size: 2rem;
+        }
+        &__link{
+            font-size: 1rem;
+        }
+    }
 }
