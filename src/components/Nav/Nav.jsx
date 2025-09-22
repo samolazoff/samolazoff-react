@@ -3,21 +3,15 @@ import './Nav.scss';
 import { useState } from 'react';
 
 import Hamburger from 'hamburger-react';
-import NavItem from './NavItem';
+import NavItem from '../NavItem/NavItem';
 import ContactsMini from '../ContactsMini/ContactsMini';
+
+import {navigation} from '../../data/data.json';
 
 const Nav = () => {
 
     const [isOpen, setOpen] = useState(false);
 
-    const  dataNav = [
-        'about',
-        'work',
-        'services',
-        'contact',
-        'blog'
-    ];
-   
     return (
         <nav className='app-nav'>
             <Hamburger toggled={isOpen} toggle={setOpen}/>
@@ -25,8 +19,8 @@ const Nav = () => {
                 <ContactsMini/>
                 <ul className='app-nav-items'>
                     {                    
-                        dataNav.map((itm, idx) => {
-                        return <NavItem name = {itm} key = {idx}/>
+                        navigation.map((itm, idx) => {
+                            return <NavItem name = {itm} key = {idx} isDark = {false}/>
                         })
                     }
                 </ul>

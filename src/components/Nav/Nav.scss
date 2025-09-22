@@ -13,17 +13,12 @@
         @include flex();
         gap: 20px;
     }
-    &-item{
-        font-size: 2rem;
-        text-transform: capitalize;
-        &:hover{
-            color: #4C40F7;
-        }
-    }
 }
+
 .hamburger-react{
     z-index: 999999;
 }
+
 @media screen and (max-width: 992px) {
     .app-nav{
         &-box{
