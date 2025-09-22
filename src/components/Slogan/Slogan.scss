@@ -1,0 +1,17 @@
+.slogan{
+    @include flex($ai: flex-start);
+    gap: 30px;
+    &__main{
+        max-width: 600px;
+        font-size: 3rem;
+        color: #ffffff;
+    }
+    &__link{
+        font-size: 1.5rem;
+        color: #FFBDBD;
+        &:hover{
+            color: #ffffff;
+        }
+    }
+    
+}

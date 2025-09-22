@@ -1,6 +1,7 @@
 import './Footer.scss';
 
 import NavItem from '../NavItem/NavItem';
+import Slogan from '../Slogan/Slogan';
 
 import {navigation} from '../../data/data.json';
 
@@ -8,9 +9,7 @@ const Footer = () => {
     return (
         <footer className='app-footer container'>
             <div className="app-footer-content">
-                <span className="app-footer__slogan">
-        
-                </span>
+                <Slogan/>
                 <ul className="app-footer-nav">
                     {                    
                         navigation.map((itm, idx) => {
