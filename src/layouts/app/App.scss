@@ -2,12 +2,13 @@
 
 *{
     user-drag: none;
-    -webkit-user-drag: none
+    -webkit-user-drag: none;
 }
 
 #root{
     @include flex($dir: column, $jc: space-between, $ai: center);
     min-height: 100vh;
+    font-family: "Poppins", sans-serif;
 }
 
 .app{

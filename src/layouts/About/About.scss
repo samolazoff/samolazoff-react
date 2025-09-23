@@ -1,6 +1,29 @@
 .about{
-    @include flex($dir: row, $jc: space-between);
+    position: relative;
+    z-index: 3;
+    @include flex($dir: row, $jc: flex-end);
+    height: 850px;
     &-content{
         @include flex($ai: flex-start);
+        gap: 25px;
+    }
+    &__txt{
+        width: 640px;
+        font-weight: 600;
+        font-size: 5rem;
+        line-height: 100px;
+        letter-spacing: -.5px;
+    }
+    &-box-img{
+        position: absolute;
+        left: 0;
+        width: 700px;
+        height: 850px;
+        background-image: url("../../static/img/mine/5373046436129799659.png");
+        background-position: center;
+        background-origin: content-box;
+        background-repeat: no-repeat;
+        background-clip: padding-box;
+        background-size: cover;
     }
 }
