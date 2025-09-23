@@ -1,0 +1,6 @@
+.about{
+    @include flex($dir: row, $jc: space-between);
+    &-content{
+        @include flex($ai: flex-start);
+    }
+}

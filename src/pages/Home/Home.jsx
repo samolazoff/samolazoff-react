@@ -1,11 +1,11 @@
 import './Home.scss';
 
-import SlideHello from '../../layouts/About/SlideHello';
+import About from '../../layouts/About/About';
 
 const Home = () => {
     return (
         <>
-            <SlideHello/>
+            <About/>
         </>
     );
 };
