@@ -1,0 +1,16 @@
+.title-block{
+    @include flex($dir: row, $jc: center);
+    gap: 18px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: #4C40F7;
+    &::before{
+        content: '';
+        display: block;
+        height: 1px;
+        width: 52px;
+        border-top: 2px solid;
+    }
+}
