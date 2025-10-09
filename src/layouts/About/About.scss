@@ -1,29 +1,101 @@
 .about{
-    position: relative;
-    z-index: 3;
-    @include flex($dir: row, $jc: flex-end);
-    height: 850px;
+    @include flex($dir: row, $jc: space-between);
+    gap: 50px;
+    height: 90vh;
     &-content{
         @include flex($ai: flex-start);
         gap: 25px;
+        height: 100%;
     }
     &__txt{
-        width: 640px;
+        max-width: 600px;
         font-weight: 600;
         font-size: 5rem;
         line-height: 100px;
         letter-spacing: -.5px;
     }
-    &-box-img{
-        position: absolute;
-        left: 0;
-        width: 700px;
-        height: 850px;
-        background-image: url("../../static/img/mine/5373046436129799659.png");
-        background-position: center;
-        background-origin: content-box;
-        background-repeat: no-repeat;
-        background-clip: padding-box;
-        background-size: cover;
+    &__img{
+        max-width: 370px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .about{
+        @include flex($dir: row, $jc: space-between);
+        gap: 50px;
+        &-content{
+            @include flex($ai: flex-start);
+            gap: 20px;
+        }
+        &__txt{
+            max-width: 500px;
+            font-size: 4.5rem;
+            line-height: 80px;
+        }
+    }                                                   
+}
+
+@media screen and (max-width: 992px) {
+    .about{
+        @include flex($dir: row, $jc: space-between);
+        gap: 100px;
+        &-content{
+            @include flex($jc: center, $ai: flex-start);
+        }
+        &__txt{
+            max-width: 500px;
+            font-size: 3.0rem;
+            line-height: 50px;
+        }
+        &__img{
+            max-width: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+   .about{
+        position: relative;
+        @include flex($dir: row, $jc: flex-end);
+        gap: 10px;
+        height: 500px;
+        &-content{
+            @include flex($jc: center, $ai: flex-end);
+            .title-block{
+                z-index: 999;
+            }
+        }
+        &__txt{
+            z-index: 999;
+        }
+        &__img{
+            position: absolute;
+            left: 0;
+            max-width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+   .about{
+        position: relative;
+        @include flex($dir: row, $jc: center);
+        gap: 10px;
+        height: 500px;
+        &-content{
+            @include flex($jc: center, $ai: center);
+            .title-block{
+                z-index: 999;
+            }
+        }
+        &__txt{
+            width: 300px;
+            font-size: 2.0rem;
+            line-height: 30px;
+            z-index: 999;
+        }
+        &__img{
+            position: absolute;
+            max-width: 200px;
+        }
     }
 }

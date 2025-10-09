@@ -1,9 +1,11 @@
 import './About.scss';
 
+import MyImg from '../../static/img/mine/5373046436129799659.png';
+
 const About = () => {
     return (
         <section className='about'>
-            <div className="about-box-img"></div>
+            <img  className='about__img' src={MyImg} alt="MY_IMG" />
             <div className="about-content">
                 <h2 className="title-block">
                     Raman Samalazau
