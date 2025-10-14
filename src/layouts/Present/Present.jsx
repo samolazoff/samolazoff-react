@@ -13,7 +13,11 @@ const Present = () => {
             </div>
             <div className="present-box-focus">
                 <h3 className="present-box-focus__title">Think. Make. Solve. </h3>
-                <Btm txt="Contact Me"></Btm>
+                <div className="present-box-focus-box-btn">
+                    <Btm txt="Contact Me"></Btm>
+                    <Btm txt="My Works"></Btm>
+                </div>
+                
             </div>
         </section>
     );
