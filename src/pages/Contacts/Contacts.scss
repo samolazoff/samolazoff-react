@@ -1,0 +1,18 @@
+.contacts{
+    position: relative;
+    @include flex($dir: column, $jc: center, $ai: center);
+    width: 100%;
+    padding: 50px 10px;
+    background-image: url('../../static/img/right_bottom_triangle_high_quality.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    &-wrap{
+        @include flex($dir: column, $jc: flex-start, $ai: flex-start);
+        width: 1120px;
+        height: 1480px;
+        padding: 50px;
+        background-color: #FFFFFF;
+        border-radius: 25px;
+    }
+}
