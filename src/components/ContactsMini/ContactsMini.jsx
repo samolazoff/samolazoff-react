@@ -4,8 +4,6 @@ import iconTelegram from '../../static/svg/contacts/telegram-fill-svgrepo-com.sv
 import iconWhatsapp from '../../static/svg/contacts/whatsapp-svgrepo-com.svg';
 import iconMail from '../../static/svg/contacts/mail-alt-2-svgrepo-com.svg';
 
-import SocialPanelMini from '../SocialPanelMini/SocialPanelMini';
-
 const ContactsMini = () => {
     return (
         <ul className='contacts-mini'>
@@ -21,7 +19,6 @@ const ContactsMini = () => {
                 <img className="contacts-mini__svg" src={iconWhatsapp} alt="iconWhatsapp" />
                 <span className="contacts-mini__txt">+375445576259</span>
             </li>
-            <SocialPanelMini flexDirection='column'></SocialPanelMini >
         </ul>
     );
 };

@@ -1,6 +1,6 @@
 .contacts-mini{
     @include flex($ai: flex-start);
-        gap: 10px;
+        gap: 25px;
     &-item{
         @include flex($dir: row);
         gap: 10px;

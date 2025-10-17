@@ -1,0 +1,23 @@
+.form-conect-wrap{
+    @include flex($dir: row, $jc: space-between, $ai: flex-start);
+    width: 100%;
+}
+.form-conect{
+    @include flex($jc: flex-start, $ai: center);
+    gap: 25px;
+    &-label{
+        width: 400px;
+    }
+    &__input{
+        width: 100%;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: rgba(228, 231, 233, 0.3) ;
+        border: none;
+        color: #4C40F7;
+        &:focus-visible{
+            border-color: #4C40F7;
+        }
+        outline-color: #4C40F7;
+    }
+}
