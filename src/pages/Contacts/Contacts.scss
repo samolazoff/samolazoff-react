@@ -9,10 +9,85 @@
     background-size: contain;
     &-wrap{
         @include flex($dir: column, $jc: flex-start, $ai: flex-start);
+        gap: 50px;
         width: 1120px;
         height: 1480px;
         padding: 50px;
         background-color: #FFFFFF;
         border-radius: 25px;
+    }
+    &__title-txt{
+        @include flex($jc: flex-start, $ai: flex-start);
+        max-width: 992px;
+        padding-bottom: 50px;
+        font-size: 42px;
+        line-height: 56px;
+        letter-spacing: -.1px;
+        border-bottom: 1px solid #ECECEC;
+        color: #111029;
+    }
+}
+@media screen and (max-width: 992px) {
+    .contacts{
+        &__title-txt{
+            max-width: 768px;
+            font-size: 28px;
+            line-height: 28px;
+            letter-spacing: -.1px;
+        }
+        &-box-focus{
+            gap: 50px;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            &__title{
+                max-width: 768px;
+                font-size: 100px;
+                line-height: 84px;
+                letter-spacing: -1.3px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts{
+        &__title-txt{
+            max-width: 576px;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -.1px;
+            border: none;
+            padding-bottom: 0px;
+        }
+        &-box-focus{
+            gap: 50px;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            &__title{
+                max-width: 576px;
+                font-size: 80px;
+                line-height: 84px;
+                letter-spacing: -1.3px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contacts{
+        &__title-txt{
+            max-width: 576px;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -.1px;
+        }
+        &-box-focus{
+            gap: 50px;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            &__title{
+                display: none;
+            }
+        }
     }
 }
