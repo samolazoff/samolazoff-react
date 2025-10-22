@@ -25,3 +25,32 @@
         outline-color: #4C40F7;
     }
 }
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+    .form-conect-wrap{
+        @include flex($dir: row, $jc: center, $ai: flex-start);
+        flex-wrap: wrap;
+        gap: 50px;
+        width: 100%;
+    }
+   
+}
+
+@media screen and (max-width: 768px) {
+    .form-conect-wrap{
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .form-conect{
+        @include flex($jc: flex-start, $ai: center);
+        gap: 25px;
+        &-label{
+            width: 300px;
+        }
+    }
+}

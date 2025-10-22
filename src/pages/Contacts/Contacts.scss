@@ -27,6 +27,14 @@
         color: #111029;
     }
 }
+@media screen and (max-width: 1200px) {
+    .contacts{
+        &-wrap{
+            width: 950px;
+        }
+    }
+}
+
 @media screen and (max-width: 992px) {
     .contacts{
         &__title-txt{
@@ -34,6 +42,14 @@
             font-size: 28px;
             line-height: 28px;
             letter-spacing: -.1px;
+        }
+        &-wrap{
+            width: 100%;
+            // width: 950px;
+            // height: 1480px;
+            padding: 50px;
+            background-color: #FFFFFF;
+            border-radius: 25px;
         }
         &-box-focus{
             gap: 50px;
