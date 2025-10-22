@@ -9,12 +9,16 @@
         width: 400px;
     }
     &__input{
+        position: relative;
         width: 100%;
         padding: 15px;
         border-radius: 10px;
-        background-color: rgba(228, 231, 233, 0.3) ;
+        background-color: #F4F4F4 ;
         border: none;
         color: #4C40F7;
+        &_textarea{
+            height: 200px;
+        }
         &:focus-visible{
             border-color: #4C40F7;
         }

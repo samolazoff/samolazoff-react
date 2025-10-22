@@ -2,10 +2,10 @@ import './Btm.scss';
 
 const Btm = (props) => {
 
-    const {txt} = props;
+    const {txt, type} = props;
 
     return (
-        <button className="app-button" type="button">
+        <button className="app-button" type={type}>
             {txt}
         </button>
     );
