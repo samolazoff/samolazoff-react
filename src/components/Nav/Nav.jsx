@@ -20,7 +20,9 @@ const Nav = () => {
                 <ul className='app-nav-items'>
                     {                    
                         navigation.map((itm, idx) => {
-                            return <NavItem name = {itm} key = {idx} isDark = {false}/>
+                            const {title, path} = itm;
+                            
+                            return <NavItem title = {title} key = {idx} isDark = {false} link={path}/>
                         })
                     }
                 </ul>
