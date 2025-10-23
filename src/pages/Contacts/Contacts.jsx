@@ -8,7 +8,7 @@ const Contacts = () => {
         <section className='contacts'>
             <div className="contacts-wrap">
                 <TitleBlock txt='Contacts With Me'/>
-                <div className="contacts__title-txt">
+                <div className="contacts__title-txt" id='contacts'>
                     <span>Let's Work</span>
                     <span>Together</span>
                 </div>

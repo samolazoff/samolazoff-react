@@ -1,5 +1,7 @@
 import './Present.scss';
 
+import {Link} from 'react-router-dom';
+
 import TitleBlock from '../../components/TitleBlock/TitleBlock';
 import Btm from '../../components/Btm/Btm';
 
@@ -14,8 +16,8 @@ const Present = () => {
             <div className="present-box-focus">
                 <h3 className="present-box-focus__title">Think. Make. Solve. </h3>
                 <div className="present-box-focus-box-btn">
-                    <Btm txt="Contact Me"></Btm>
-                    <Btm txt="My Works"></Btm>
+                    <Link to='/contacts#contacts'><Btm txt="Contact Me" type="button"></Btm></Link>
+                    <Btm txt="My Works" type="button"></Btm>
                 </div>
                 
             </div>
