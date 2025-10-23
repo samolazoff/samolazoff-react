@@ -1,0 +1,92 @@
+.work{
+    @include flex($jc: flex-start, $ai: flex-start);
+    gap: 50px;
+    margin: 50px 0;
+    &__title-txt{
+        @include flex($jc: flex-start, $ai: flex-start);
+        max-width: 992px;
+        padding-bottom: 50px;
+        font-size: 42px;
+        line-height: 56px;
+        letter-spacing: -.1px;
+        border-bottom: 1px solid #ECECEC;
+        color: #111029;
+    }
+    &-items{
+        @include flex($dir: row, $jc: center, $ai: flex-start);
+        flex-wrap: wrap;
+        gap: 50px;
+        width: 100%;
+    }
+    &-card{
+        @include flex($jc: flex-start, $ai: flex-start);
+        gap: 50px;
+        max-width: 500px;
+        &__img{
+            width: 100%;
+        }
+        &-box{
+            @include flex($jc: flex-start, $ai: flex-start);
+            gap: 15px;
+        }
+        &__title{
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 48px;
+            letter-spacing: -.15px;
+            cursor: pointer;
+            &:hover{
+                color: #FFBDBD;
+            }
+        }
+        &__txt{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 2px;
+            letter-spacing: 0px;
+            color: #6B6B6B;
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .contacts{
+        &-wrap{
+            width: 950px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .work{
+        &__title-txt{
+            max-width: 768px;
+            font-size: 28px;
+            line-height: 28px;
+            letter-spacing: -.1px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .work{
+        &__title-txt{
+            max-width: 576px;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -.1px;
+            border: none;
+            padding-bottom: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .work{
+        &__title-txt{
+            max-width: 576px;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -.1px;
+        }
+    }
+}

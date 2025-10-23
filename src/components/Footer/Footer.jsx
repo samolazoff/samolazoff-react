@@ -18,7 +18,8 @@ const Footer = () => {
                 <ul className="app-footer-nav">
                     {                    
                         navigation.map((itm, idx) => {
-                            return <NavItem name = {itm} key = {idx} isDark = {true}/>
+                            const {title, path} = itm;
+                            return <NavItem title = {title} key = {idx} isDark = {false} link={path}/>
                         })
                     }
                 </ul>

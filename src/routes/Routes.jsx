@@ -4,6 +4,7 @@ import Layout from "../components/Layout/Layout";
 
 import Home from "../pages/Home/Home";
 import Contacts from '../pages/Contacts/Contacts';
+import Work from "../pages/Work/Work";
 
 const AppRoutes = () => {
     return (
@@ -12,6 +13,7 @@ const AppRoutes = () => {
                 <Route path="/" element  = {<Layout/>}>
                     <Route index element = {<Home/>}/>
                     <Route path="contacts" element = {<Contacts/>}/>
+                    <Route path="work" element={<Work/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>

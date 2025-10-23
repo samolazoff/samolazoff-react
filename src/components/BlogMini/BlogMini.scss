@@ -3,7 +3,7 @@
     @include flex($jc: flex-start, $ai: flex-start);
     gap: 50px;
     width: 100%;
-    margin-top: 100px;
+    margin: 100px 0;
     &__title-txt{
         @include flex($jc: flex-start, $ai: flex-start);
         max-width: 992px;
