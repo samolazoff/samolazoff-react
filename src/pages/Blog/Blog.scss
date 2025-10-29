@@ -1,7 +1,37 @@
 .blog{
-    @include flex($dir: column, $jc: flex-start, $ai: flex-start);
-    gap: 25px;
+    @include flex($dir: column, $jc: center, $ai: center);
+    gap: 50px;
     width: 100%;
+    &-items{
+        @include flex($dir: column, $jc: flex-start, $ai: flex-start);
+        gap: 50px;
+        width: 100%;
+    }
+    &-item{
+        @include flex($dir: column, $jc: flex-start, $ai: flex-start);
+        border-bottom: 3px solid #FFFFFF;
+        &-box{
+            @include flex($dir: row, $jc: space-between, $ai: flex-start);
+            width: 100%;
+            padding: 25px;
+            background-color: #FFFFFF;
+            border-radius: 25px;
+            font-size: 18px;
+        }
+        &-article{
+            @include flex($dir: column, $jc: flex-start, $ai: flex-start);
+            padding: 25px;
+            gap: 15px;
+            &__txt{
+                font-size: 18px;
+                line-height: 36px;
+            }
+        }
+        &__title{
+            font-size: 24px;
+            font-weight: 600;
+        }
+    }
     &__title-txt{
         @include flex($jc: flex-start, $ai: flex-start);
         max-width: 992px;
