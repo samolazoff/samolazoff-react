@@ -4,7 +4,7 @@ import './Work.scss';
 
 import TitleBlock from '../../components/TitleBlock/TitleBlock';
 
-import imgSite from '../../static/img/mine/site.png';
+// import imgSite from '../../static/img/mine/site.png';
 
 const Work = () => {
     return (
@@ -16,14 +16,14 @@ const Work = () => {
             </div>
             <ul className="work-items">
                 <li className="work-card">
-                    <img src={imgSite} alt="img-site" className='work-card__img'/>
+                    {/* <img src={imgSite} alt="img-site" className='work-card__img'/> */}
                     <div className="work-card-box">
                         <h3 className="work-card__title">Portfolio Samolazoff</h3>
                         <span className="work-card__discription">This is siteportfolio for my</span>
                     </div>
                 </li>
                 <li className="work-card">
-                    <img src={imgSite} alt="img-site" className='work-card__img'/>
+                    {/* <img src={imgSite} alt="img-site" className='work-card__img'/> */}
                     <div className="work-card-box">
                         <Link to='/'>
                             <h3 className="work-card__title">Portfolio Samolazoff</h3>
