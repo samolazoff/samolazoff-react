@@ -21,8 +21,9 @@
         }
         &:focus-visible{
             border-color: #4C40F7;
+            outline-color: #4C40F7;
         }
-        outline-color: #4C40F7;
+        
     }
 }
 @media screen and (max-width: 1200px) {

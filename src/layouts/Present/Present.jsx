@@ -17,7 +17,7 @@ const Present = () => {
                 <h3 className="present-box-focus__title">Think. Make. Solve. </h3>
                 <div className="present-box-focus-box-btn">
                     <Link to='/contacts#contacts'><Btm txt="Contact Me" type="button"></Btm></Link>
-                    <Btm txt="My Works" type="button"></Btm>
+                    <Link to='/work'><Btm txt="My Works" type="button"></Btm></Link>
                 </div>
                 
             </div>

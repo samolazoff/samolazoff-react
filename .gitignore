@@ -24,4 +24,4 @@ package-lock.json
 *.sln
 *.sw?
 
-src/static/img/mine
+# src/static/img/mine

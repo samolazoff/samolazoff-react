@@ -30,7 +30,7 @@ const BlogMini = () => {
                     </Link>
                 </li>
             </ul>
-            <Btm txt="Read More"/>
+            <Link to="/blog"><Btm txt="Read More"/></Link>
         </section>
     );
 };
