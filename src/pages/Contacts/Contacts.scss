@@ -38,15 +38,18 @@
 @media screen and (max-width: 992px) {
     .contacts{
         &__title-txt{
+            @include flex($dir: row, $jc: flex-start, $ai: flex-start);
+            align-self: flex-start;
+            gap: 10px;
             max-width: 768px;
             font-size: 28px;
             line-height: 28px;
             letter-spacing: -.1px;
         }
         &-wrap{
+            @include flex($jc: flex-start, $ai: center);
+            flex-wrap: wrap;
             width: 100%;
-            // width: 950px;
-            // height: 1480px;
             padding: 50px;
             background-color: #FFFFFF;
             border-radius: 25px;

@@ -26,15 +26,12 @@
         
     }
 }
-@media screen and (max-width: 1200px) {
-
-}
 @media screen and (max-width: 992px) {
     .form-conect-wrap{
         @include flex($dir: row, $jc: center, $ai: flex-start);
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         gap: 50px;
-        width: 100%;
+        width: 680px;
     }
    
 }
